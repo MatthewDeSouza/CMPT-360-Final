@@ -23,7 +23,7 @@ public class AlertBox {
 
     public AlertBox(String title, String message, String buttonMessage,
             double width, double height, double spacing, Pos alignment,
-            boolean isExport) {
+            boolean isError) {
         this.title = title;
         this.message = message;
         this.buttonMessage = buttonMessage;
@@ -31,6 +31,7 @@ public class AlertBox {
         this.width = width;
         this.height = height;
         this.alignment = alignment;
+        this.isError = isError;
 
         stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -58,8 +59,8 @@ public class AlertBox {
         this("", "", "", 360, 120, 50.0, Pos.CENTER, false);
     }
 
-    public AlertBox(boolean isExport) {
-        this("", "", "", 360, 120, 50.0, Pos.CENTER, isExport);
+    public AlertBox(boolean isError) {
+        this("", "", "", 360, 120, 50.0, Pos.CENTER, isError);
     }
 
     public void display() {
