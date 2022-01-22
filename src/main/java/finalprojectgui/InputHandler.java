@@ -10,7 +10,6 @@ import java.nio.charset.Charset;
 
 public class InputHandler {
 
-    private String[] ans;
     private File instructorFile, departmentFile;
     private InputStream instructorStream, departmentStream;
     private final String IOExceptionString = "ERROR! InputStream for object '"
@@ -96,9 +95,6 @@ public class InputHandler {
 
     public void write(String str) throws IOException {
         FileWriter temp = new FileWriter(instructorFile, true);
-        if (temp == null) {
-            throw new IOException(IOExceptionString);
-        }
         temp.write(str);
         temp.close();
     }

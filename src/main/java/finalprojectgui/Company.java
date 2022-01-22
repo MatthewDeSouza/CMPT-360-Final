@@ -5,10 +5,9 @@ public class Company {
     private String instructorName, instructorID, instructorDepartment;
     private String departmentName, location, budget;
 
-    protected enum FileName {
+    public enum FileName {
         DEPARTMENT,
-        INSTRUCTOR,
-        NEITHER
+        INSTRUCTOR
     }
 
     public Company(String employeeName, String employeeID,

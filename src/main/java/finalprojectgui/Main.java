@@ -26,7 +26,7 @@ public class Main extends Application {
     private Button importInstructor, importDepartment;
     private HBox mainSceneButtons;
     private String employeeName, employeeID, employeeDepartment;
-    private String[] instructorArray, departmentArray;
+    private String[] instructorArray;
 
     public static void main(String[] args) {
         launch(args);
