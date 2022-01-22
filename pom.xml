@@ -4,7 +4,7 @@
     <groupId>edu.manhattan</groupId>
     <artifactId>finalprojectgui</artifactId>
     <description>JavaFX GUI for CMPT 360 final.</description>
-    <version>1.0</version>
+    <version>1.1</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
@@ -102,7 +102,6 @@
                     <include>**/*.txt</include>
                     <include>**/*.png</include>
                     <include>**/*.jpg</include>
-                    <include>RESOURCE_PATH</include>
                 </includes>
                 <filtering>true</filtering>
             </resource>
